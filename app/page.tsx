@@ -1,40 +1,36 @@
-import Image from "next/image";
+"use client";
+
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
+
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen bg-[#08002e]">
-      {/* HEADER */}
-      <header className="fixed top-0 left-0 right-0 flex items-center justify-between bg-[#3711b350] p-4 border-b border-[#4006FF] backdrop-blur-lg">
-        <div className="flex items-center gap-2">
-          <img className="w-14" src="/logo.svg" alt="cura logo" />
-          <h1 className="text-[#360dbb] font-nunito text-3xl font-extrabold">
-            CURA
-          </h1>
-        </div>
+    <main className="flex flex-col min-h-screen p-4 gap-8">
+      <section className="text-center w-full max-w-7xl bg-[#3711b350] border-2 border-[#4006FF] rounded-xl p-6 space-y-4">
+        <h1 className="text-4xl font-bold">Welcome to Cura</h1>
+        <Image
+          src="/logo.svg"
+          alt="cura logo"
+          width={100}
+          height={100}
+          className="mx-auto"
+        />
+        <p className="text-xl">Your innovative health care app</p>
+      </section>
 
-        <div className="flex gap-3">
-          <a
-            className="bg-[#3711b350] px-4 py-2 rounded-lg text-white"
-            href="/auth/signup"
-          >
-            Sign Up
-          </a>
-          <a
-            className="bg-[#3711b350] px-4 py-2 rounded-lg text-white"
-            href="/auth/login"
-          >
-            Login
-          </a>
-        </div>
-      </header>
-
-      {/* CONTENT */}
-      <div className="mt-[1rem] w-full flex justify-center px-15">
-        <div className="w-full  max-w-1280px bg-[#3711b350] border-2 border-[#4006FF] rounded-xl p-6">
-          {/* content goes here */}
-        </div>
-      </div>
+      {/* CTA */}
+      <section className="w-full max-w-3xl mx-auto flex justify-center">
+        <Button
+          onClick={() => router.push("/dashboard")}
+          className="text-2xl font-bold cursor-pointer"
+          variant="default"
+        >
+          Get Started
+        </Button>
+      </section>
     </main>
   );
 }
