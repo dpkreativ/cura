@@ -5,7 +5,7 @@ export default function Login() {
     <main className="flex flex-col items-center justify-top h-fit bg-[#08002e] pt-20 pb-20">
       <div className="flex flex-col items-center justify-center gap-2">
         <img src="/logo.svg" alt="cura logo" />
-        <h1 className="text-[#ffff] font-nunito text-5xl font-extrabold flex flex-row gap-2 items-center justify-center">
+        <h1 className="text-white font-nunito text-5xl font-extrabold flex flex-row gap-2 items-center justify-center">
           Welcome Back To
           <span className="text-[#360dbb] font-nunito text-5xl font-extrabold">
             CURA
@@ -13,7 +13,7 @@ export default function Login() {
         </h1>
       </div>
       <div className="flex flex-col items-center justify-center gap-2">
-        <h2 className="text-[#fff] font-nunito text-3xl font-extrabold mt-15">
+        <h2 className="text-white font-nunito text-3xl font-extrabold mt-15">
           Login
         </h2>
         <div className="flex flex-col items-left justify-center gap-2 bg-[#3711b350] border-3 border-[#4006FF] p-7 w-[768px] rounded-lg">
@@ -39,7 +39,7 @@ export default function Login() {
           />
         </div>
 
-        <h1 className="text-[#ffff] font-nunito text-0.5 font-light flex flex-row gap-2 items-center justify-center">
+        <h1 className="text-white font-nunito text-0.5 font-light flex flex-row gap-2 items-center justify-center">
           Don't have an account?
           <a
             className="text-[#360dbb] font-nunito text-1 font-light underline"
@@ -55,7 +55,7 @@ export default function Login() {
         >
           Login
         </button>
-        <p className="text-[#fff] font-nunito text-3 font-bold"> Or </p>
+        <p className="text-white font-nunito text-3 font-bold"> Or </p>
         <GoogleLogin />
       </div>
     </main>
