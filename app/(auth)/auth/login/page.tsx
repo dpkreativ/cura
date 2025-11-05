@@ -42,7 +42,7 @@ export default function Login() {
         <h1 className="text-[#ffff] font-nunito text-0.5 font-light flex flex-row gap-2 items-center justify-center">
           Don't have an account?
           <a
-            className="text-[#360dbb] font-nunito text-1 font-light"
+            className="text-[#360dbb] font-nunito text-1 font-light underline"
             href="/auth/signup"
           >
             Sign Up
