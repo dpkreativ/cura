@@ -9,7 +9,7 @@ export default function Home() {
 
   return (
     <main className="flex flex-col min-h-screen p-4 gap-8">
-      <section className="text-center w-full max-w-7xl bg-[#3711b350] border-2 border-[#4006FF] rounded-xl p-6 space-y-4">
+      <section className="text-center w-full max-w-7xl bg-[#3711b350] border-2 border-[#4006FF] p-4 ml-auto mr-auto rounded-xl">
         <h1 className="text-4xl font-bold">Welcome to Cura</h1>
         <Image
           src="/logo.svg"
